@@ -69,6 +69,11 @@ hr.style13 {
 .vl {
   height: 0;
 }
+
+.v2 {
+  height: 0;
+}
+
 #quote {
   font-size: 20px;
   padding-bottom: 25px;
@@ -77,10 +82,17 @@ hr.style13 {
 .foot {
   display: flex;
   color: #f8f9fa;
+  opacity: 0.9;
   justify-content: center;
   align-items: center;
   height: 10vh;
   background: rgb(39, 39, 39);
+}
+
+#projects {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background: #cadefc;
 }
 
 .fa-facebook {
@@ -125,10 +137,43 @@ hr.style13 {
     top: 0;
     opacity: 0.7;
   }
+  .v2 {
+    border-left: 5px solid #8c8b8b;
+    height: 110px;
+    position: absolute;
+    left: 98%;
+    margin-left: -3px;
+    top: 0;
+    opacity: 0.7;
+  }
+}
+
+#btn2 {
+  margin-top: 38px;
 }
 
 @media (max-width: 574px) {
   #skill {
     line-height: 100px;
+  }
+}
+
+@media (max-width: 990px) {
+  #all,
+  #btn1,
+  #btn2,
+  #btn3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #btn1,
+  #btn3 {
+    margin-top: 20px;
+  }
+
+  #btn2 {
+    margin-top: 60px;
+    margin-bottom: 20px;
   }
 }
